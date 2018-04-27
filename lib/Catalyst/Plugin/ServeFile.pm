@@ -93,8 +93,8 @@ Catalyst::Plugin::ServeFile - A less opinionated, minimal featured way to serve 
 L<Catalyst::Plugin::Static::Simple> is venerable but I find it has too many default
 opinions.  I generally only use it for the simple job of when I have a single static file
 or so that lives behind authentication that I want to serve.  For that simple job
-L<Catalyst::Plugin::Static::Simple> does provide a method 'serve_static_file', but there's
-two problems with it.  First, the plugin out of the box will attempt to serve all files 
+L<Catalyst::Plugin::Static::Simple> does provide a method 'serve_static_file', but there
+are two problems with it.  First, the plugin out of the box will attempt to serve all files 
 requested at the '/static/...' path.  If you don't want that its configuration effort.
 Also, it doesn't currently support L<Plack::Middleware::XSendfile> (Although I want to
 point out adding such support would be trivial, and I would be happy to help if needed).
@@ -125,7 +125,7 @@ handle that yourself.
 
 If the last argument is a HashRef, we will use it as an overlay on any configuration options.
 
-See the L<\SYNOPSIS> for a longer example.
+See the L</SYNOPSIS> for a longer example.
 
 =head1 CONFIGURATION
 
